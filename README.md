@@ -34,7 +34,7 @@ Dashboard ini menyajikan data **Tingkat Pengangguran Terbuka (TPT)** di Provinsi
 ### 1. Kloning repositori
 
 ```bash
-git clone https://github.com/username/tpt-jabar-dashboard.git
+git clone https://github.com/ZidanAlfarizaPutraPratama/dashboard-pengangguran-jabar.git
 cd tpt-jabar-dashboard
 2. Buat dan aktifkan virtual environment (opsional tapi disarankan)
 bash
