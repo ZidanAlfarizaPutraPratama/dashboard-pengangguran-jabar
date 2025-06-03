@@ -62,7 +62,12 @@ Data diambil dari portal resmi Pemerintah Provinsi Jawa Barat:
 Proyek ini dilisensikan di bawah MIT License. Silakan gunakan, modifikasi, dan distribusikan proyek ini dengan tetap mencantumkan atribusi.
 
 📸 Tampilan Dashboard
-Ganti gambar di bawah ini dengan screenshot dashboard milikmu:
+![image](https://github.com/user-attachments/assets/37cec99f-c4a0-425f-964f-686db9b15c4d)
+![image](https://github.com/user-attachments/assets/e88fcc21-d9d1-4077-b169-4ada1981462b)
+![image](https://github.com/user-attachments/assets/5c946882-b400-4c9d-948b-7f332676b3da)
+
+
+
 
 
 🙋‍♀️ Kontribusi
