@@ -1,0 +1,30 @@
+# Python cache & compiled
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Streamlit specific
+.streamlit/config.toml
+
+# Jupyter/Notebook cache
+.ipynb_checkpoints/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Data pribadi atau lokal
+*.csv
+*.xlsx
+*.json
+data.jabarprov.go.id/
