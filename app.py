@@ -13,11 +13,11 @@ if not os.path.exists(csv_path):
 cols = ['kode_provinsi', 'kode_lain', 'nama_provinsi', 'indeks_tpt', 'satuan', 'tahun']
 df = pd.read_csv(csv_path, names=cols, header=None)
 
-# Filter hanya provinsi JAWA BARAT dan rapikan format
+# Filter hanya provinsi JAWA BARAT
 df['nama_provinsi'] = df['nama_provinsi'].str.strip().str.upper()
 df = df[df['nama_provinsi'] == 'JAWA BARAT']
 
-# Pastikan kolom tahun & indeks numerik
+# Kolom tahun & indeks numerik
 df['tahun'] = pd.to_numeric(df['tahun'], errors='coerce').astype('Int64')
 df['indeks_tpt'] = pd.to_numeric(df['indeks_tpt'], errors='coerce')
 df.dropna(subset=['tahun', 'indeks_tpt'], inplace=True)
@@ -29,7 +29,7 @@ st.title("📊 Dashboard Tingkat Pengangguran Jawa Barat")
 st.subheader("📅 Tahun Data Tersedia")
 tahun_tersedia = df['tahun'].dropna().astype(int).unique().tolist()
 tahun_tersedia.sort()
-st.write(tahun_tersedia)  # Contoh output: [2018, 2019, 2020, 2021, 2022, 2023, 2024]
+st.write(tahun_tersedia)
 
 # Statistik Deskriptif
 st.subheader("📈 Statistik Deskriptif Tingkat Pengangguran (%)")
@@ -47,7 +47,7 @@ chart = alt.Chart(df).mark_line(point=True).encode(
 )
 st.altair_chart(chart, use_container_width=True)
 
-# Rata-rata per Tahun (optional)
+# Rata-rata per Tahun
 st.subheader("📊 Tabel Ringkasan per Tahun")
 df_tahun = df[['tahun', 'indeks_tpt']].sort_values(by='tahun').reset_index(drop=True)
 df_tahun['tahun'] = df_tahun['tahun'].astype(int)
