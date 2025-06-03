@@ -10,6 +10,7 @@ Dashboard ini menyajikan data **Tingkat Pengangguran Terbuka (TPT)** di Provinsi
 
 ## 📁 Struktur Proyek
 
+```
 📦tpt-jabar-dashboard/
 ├── 📄 app.py # Aplikasi utama Streamlit
 ├── 📁 data.jabarprov.go.id/ # Folder data
@@ -17,6 +18,7 @@ Dashboard ini menyajikan data **Tingkat Pengangguran Terbuka (TPT)** di Provinsi
 ├── 📄 requirements.txt # Daftar dependensi Python
 ├── 📄 LICENSE # Lisensi MIT
 └── 📄 README.md # Dokumentasi proyek
+```
 
 ---
 
@@ -32,7 +34,7 @@ Dashboard ini menyajikan data **Tingkat Pengangguran Terbuka (TPT)** di Provinsi
 ## ▶️ Cara Menjalankan Aplikasi
 
 ### 1. Kloning repositori
-
+```
 git clone https://github.com/ZidanAlfarizaPutraPratama/dashboard-pengangguran-jabar.git
 cd tpt-jabar-dashboard
 2. Buat dan aktifkan virtual environment (opsional tapi disarankan)
@@ -47,11 +49,12 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
+```
+
 4. Jalankan aplikasi
-bash
-Copy
-Edit
+```
 streamlit run app.py
+```
 💾 Sumber Data
 Data diambil dari portal resmi Pemerintah Provinsi Jawa Barat:
 
